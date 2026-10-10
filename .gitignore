@@ -1,0 +1,20 @@
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Dependencies and generated files
+node_modules/
+dist/
+build/
+
+# Local media recordings: submit a share link instead
+*.mp4
+*.mov
+*.mkv
+*.webm
+
+# Local secrets
+.env
+.env.*
+!.env.example
