@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    background-color: #f6f6f7;
+    color: #333333;
+    font-family: "Times New Roman", serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1e3a5a;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 32px;
+    margin: 0;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+h2 {
+    color: #329adb;
+    font-size: 26px;
+}
+
+h3 {
+    color: #e76f51;
+    font-size: 21px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #dddddd;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+ul {
+    padding-left: 25px;
+    list-style-type: disc;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+nav {
+    background-color: #263f5b;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav li {
+    margin-bottom: 0;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #496b91;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    max-width: 1000px;
+    margin: 25px auto;
+    padding: 0 20px;
+}
+
+main {
+    flex: 3;
+    min-width: 0;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+main section {
+    margin-bottom: 30px;
+}
+
+aside {
+    flex: 1;
+    min-width: 0;
+    background-color: #e1eaf5;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #172b40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #c9e2ff;
+}
+
+a {
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    main,
+    aside {
+        width: 100%;
+    }
+}

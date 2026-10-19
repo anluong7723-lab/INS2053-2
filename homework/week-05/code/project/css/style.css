@@ -1,10 +1,15 @@
+* {
+    box-sizing: border-box;
+}
 
 body {
     background-color: #f6f6f7;
-    color: #ae0b0b;
+    color: #333333;
     font-family: "Times New Roman", serif;
     font-size: 16px;
     line-height: 1.6;
+    margin: 0;
+    width: 100%;
 }
 
 h1 {
@@ -43,12 +48,7 @@ li {
     margin-bottom: 8px;
 }
 
-/* Week 5 - Page Layout */
-
-body {
-    margin: 0;
-    width: 100%;
-}
+/* Header */
 
 header {
     background-color: #1e3a5a;
@@ -58,8 +58,15 @@ header {
 }
 
 header h1 {
+    color: white;
     margin: 0;
 }
+
+header p {
+    margin-bottom: 0;
+}
+
+/* Navigation */
 
 nav {
     background-color: #263f5b;
@@ -75,7 +82,12 @@ nav ul {
     gap: 30px;
 }
 
+nav li {
+    margin-bottom: 0;
+}
+
 nav a {
+    display: inline-block;
     color: white;
     text-decoration: none;
     padding: 8px 12px;
@@ -86,8 +98,11 @@ nav a.active {
     background-color: #496b91;
 }
 
+/* Main layout */
+
 .container {
     display: flex;
+    align-items: flex-start;
     gap: 25px;
     max-width: 1000px;
     margin: 25px auto;
@@ -108,6 +123,29 @@ aside {
     padding: 20px;
 }
 
+/* Contact form */
+
+input,
+textarea {
+    max-width: 100%;
+    padding: 8px;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+textarea {
+    width: 100%;
+}
+
+button {
+    padding: 8px 16px;
+    font-family: inherit;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Footer */
+
 footer {
     background-color: #172b40;
     color: white;
@@ -115,12 +153,28 @@ footer {
     padding: 20px;
 }
 
+footer p {
+    margin: 5px 0;
+}
+
 footer a {
     color: #c9e2ff;
 }
 
+/* Responsive layout */
+
 @media (max-width: 600px) {
+    nav ul {
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+
     .container {
         flex-direction: column;
+    }
+
+    main,
+    aside {
+        width: 100%;
     }
 }
